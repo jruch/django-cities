@@ -144,7 +144,7 @@ country_codes = [
 ]
 
 # See http://www.geonames.org/export/codes.html
-city_types = ['PPL','PPLA','PPLC','PPLA2','PPLA3','PPLA4', 'PPLG']
+city_types = ['PPL','PPLA','PPLC','PPLA2','PPLA3','PPLA4', 'PPLG', 'AIRP', 'AMUS', 'PRK', 'RECG']
 district_types = ['PPLX']
 
 # Command-line import options

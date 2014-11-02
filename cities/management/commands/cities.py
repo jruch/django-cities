@@ -260,7 +260,8 @@ class Command(BaseCommand):
                 subregion.region = self.region_index[country_code + "." + region_code]
             except:
                 self.logger.warning("Subregion: {0}: Cannot find region: {1}".format(subregion.name, region_code))
-                continue
+                # continue
+                pass
                 
             if not self.call_hook('subregion_post', subregion, item): continue
             subregion.save()
@@ -313,7 +314,8 @@ class Command(BaseCommand):
                 city.region = region
             except:
                 self.logger.warning("{0}: {1}: Cannot find region: {2} -- skipping".format(country_code, city.name, region_code))
-                continue
+                # continue
+                pass
             
             subregion_code = item['admin2Code']
             try: 
